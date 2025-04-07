@@ -1,11 +1,15 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="text-center font-bold text-4xl py-2 text-red-500">
+      <div className="flex justify-between py-5 text-xl font-bold px-10">
         {" "}
-        This is my home page{" "}
+        <Link to={'/'}> Home </Link>
+        <Link to={'/header'}> About </Link>
+        <Link to={'/main'}> Blogs </Link>
+        <Link to={'/footer'}> Footer </Link>
+     
       </div>
     </div>
   );
